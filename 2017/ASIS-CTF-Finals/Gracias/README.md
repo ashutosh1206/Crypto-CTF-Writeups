@@ -34,7 +34,8 @@ Conclusion from the paper which is significant for exploit of this challenge:
 Here q(m+1) and q(m) are the (m+1)th and mth denominators of the convergents of the continued fraction of (e/n) respectively.
 
 This is a script implementing the above conclusion:
-'''python
+
+```python
 def wiener(e, n):
 	m = 12345
 	c = pow(m, e, n)
@@ -53,8 +54,9 @@ def wiener(e, n):
 				if m1 == m:
 					return d
 		q0 = q1
-'''
+```
 which will give us the decryption exponent:
+
 `d = 100556095937036905102538523179832446199526507742826168666218687736467897968451`
 
 Then we can write the following code to get the flag: 
@@ -68,7 +70,7 @@ print long_to_bytes(c2 * inverse(K, a) % a)
 
 This gives us the flag: `ASIS{Wiener_at7ack_iN_mUlt1_Prim3_RSA_iZ_f34sible_t0O!}`
 
-If you want to check how I approached the challenge in detail, checkout my blog [here](https://masterpessimistaa.wordpress.com/2017/11/24/asis-finals-ctf-2017-gracias-writeup/)
+If you want to check how I approached the challenge in detail, checkout my blog [here](https://masterpessimistaa.wordpress.com/2017/11/24/asis-finals-ctf-2017-gracias-writeup/).
 The complete exploit script [here](exploit.py)
 
 
