@@ -23,8 +23,13 @@ The first block contains 16 bytes of our input, which is known to us. When we se
 Here `x = 15 bytes input + 1 byte secret`.
 We know the first 15 bytes of block #1, we can simply brute force 256 possibilities of the 16th byte in block #1 by checking the corresponding ciphertexts of block #1.
 
+![picture](https://i.imgur.com/bta3KOp.png)
+
 For the second byte we send 14 random bytes + 1 byte of secret(we got from previous step) as the input to the server and then brute force for 2nd byte of secret which again has 256 possibilties. We keep on continuing this process to get each byte of the secret and finally get the flag:
-`flag{Crypt0_is_s0_h@rd_t0_d0...}`
+
+![picture2](https://i.imgur.com/BFvygKf.png)
+
+Flag: `flag{Crypt0_is_s0_h@rd_t0_d0...}`
 
 In case you want to know how I approached the problem in detail, checkout my blogpost [here](https://amritabi0s.wordpress.com/2017/09/18/csaw-quals-2017-babycrypt-writeup/).
 Check my complete exploit script for this challenge [here](exploit.py).
