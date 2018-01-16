@@ -28,11 +28,10 @@ Since, n<sup>s+1</sup> is always greater than and divisible by n<sup>2</sup>, we
 ![equation](https://latex.codecogs.com/png.latex?\small&space;enc&space;\equiv&space;(n&plus;1)^{msg}&space;\pmod&space;{n^{s&plus;1}})  
 ![equation](https://latex.codecogs.com/png.latex?\small&space;enc&space;\equiv&space;(msg*n&space;&plus;&space;1)&space;\pmod&space;{n^2})  
 Therefore,  
-![equation](https://latex.codecogs.com/png.latex?\small&space;msg&space;=&space;\frac{enc\%n^{2}&space;-&space;1}{n})  
+![equation](https://latex.codecogs.com/png.latex?{m&space;=&space;\frac{(enc\mod&space;n^2)&space;-&space;1}{n}}) 
   
 Surprisingly, this is the single line exploit to the challenge: 
 ```python
-from sage.all import *
 hex(int((enc%n^2-1)/n))[2:].replace("L","").decode("hex")
 ```
 
