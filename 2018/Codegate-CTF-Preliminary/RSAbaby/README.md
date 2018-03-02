@@ -13,8 +13,13 @@ We know that:
 ![equation](https://latex.codecogs.com/gif.latex?eg=ed*(p-0xdeadbeef))  
 ![equation](https://latex.codecogs.com/gif.latex?2^{eg}=2^{ed*(p-0xdeadbeef)})  
 ![equation](https://latex.codecogs.com/gif.latex?2^{eg}\mod&space;n=2^{ed*(p-0xdeadbeef)}\mod&space;n)  
+Thus we can write,  
+![equation](https://latex.codecogs.com/gif.latex?2^{ed*(p-0xdeadbeef)}=2^{(1&plus;k\phi(n))*(p-0xdeadbeef)})  
+![equation](https://latex.codecogs.com/gif.latex?2^{(1&plus;k\phi(n))*(p-0xdeadbeef)}=(2*2^{k\phi(n)})^{(p-0xdeadbeef)})  
+![equation](https://latex.codecogs.com/gif.latex?(2*2^{k\phi(n)})^{(p-0xdeadbeef)}=2^{(p-0xdeadbeef)}*2^{k*\phi(n)*(p-0xdeadebeef)})  
 We know from Euler's Theorem that when GCD(a, n) == 1:  
 ![equation](https://latex.codecogs.com/gif.latex?a^{\phi(n)}\equiv1\mod&space;n)  
+![equation](https://latex.codecogs.com/gif.latex?2^{(p-0xdeadbeef)}*2^{k*\phi(n)*(p-0xdeadebeef)}\equiv2^{p-0xdeadebeef}*1\mod&space;n)  
 ![equation](https://latex.codecogs.com/gif.latex?2^{eg}\mod&space;n=2^{p-0xdeadbeef}\mod&space;n)  
 ![equation](https://latex.codecogs.com/gif.latex?2^{eg}*2^{0xdeadbeef}\mod&space;n=2^{p}\mod&space;n)  
 We know from Fermat's Little Theorem that when GCD(a, p) == 1:  
