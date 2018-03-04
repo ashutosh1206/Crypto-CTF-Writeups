@@ -23,12 +23,12 @@ We know from Euler's Theorem that when GCD(a, n) == 1:
 ![equation](https://latex.codecogs.com/gif.latex?2^{eg}\mod&space;n=2^{p-0xdeadbeef}\mod&space;n)  
 ![equation](https://latex.codecogs.com/gif.latex?2^{eg}*2^{0xdeadbeef}\mod&space;n=2^{p}\mod&space;n)  
 We know from Fermat's Little Theorem that when GCD(a, p) == 1:  
-![equation](https://latex.codecogs.com/gif.latex?a^{p}\equiv&space;a\mod&space;n)  
+![equation](https://latex.codecogs.com/gif.latex?a^{p}\equiv&space;a\mod&space;p)  
 We can now write:  
-![equation](https://latex.codecogs.com/gif.latex?2^{eg}*2^{0xdeadbeef}\mod&space;n&space;=&space;2)  
+![equation](https://latex.codecogs.com/gif.latex?2^{eg}*2^{0xdeadbeef}\mod&space;n=(kp&plus;2)\mod&space;n)  
 Thus,  
-![equation](https://latex.codecogs.com/gif.latex?2^{eg}*2^{0xdeadbeef}\mod&space;n&space;-2)  
-will be a factor of modulus N.  
+![equation](https://latex.codecogs.com/gif.latex?2^{eg}*2^{0xdeadbeef}-2\mod&space;n=kp\mod&space;n)  
+will be a factor of the RSA modulus N.  
 We can easily get one of the factors of N as p = GCD(2^(eg + 0xdeadbeef) mod N - 2, N) and q = N/p  
 
 ## Exploit script
