@@ -127,8 +127,8 @@ From the code we observe the following:
 2. Returns the ciphertext
 
 Mathematically the encryption happens as follows:  
-c = (m + sha256(pad))**3 % n  
-Note that m**3 > n  
+c = (m + sha256(pad))^3 % n  
+Note that m^3 > n  
 
 ### The vulnerability
 Allowing user controlled padding exposes the challenge to the attack described below  
@@ -157,15 +157,15 @@ The following computation happens when we send the input as ‘1’:
   
 
 Now that we have values of hash1(or h1), hash2(or h2), c1 and c2, we can use them to get m. Let us see how:  
-![picture](1.gif)  
-![picture](2.gif)  
-![picture](3.gif)  
-![picture](4.gif)  
-![picture](5.gif)  
-![picture](6.gif)  
-![picture](7.gif)  
-![picture](8.gif)  
-where a = 3, b = 3*(h1 + h2), c = (h1**2 + h1*h2 + h2**2) – x  
+![picture](Pictures/1.gif)  
+![picture](Pictures/2.gif)  
+![picture](Pictures/3.gif)  
+![picture](Pictures/4.gif)  
+![picture](Pictures/5.gif)  
+![picture](Pictures/6.gif)  
+![picture](Pictures/7.gif)  
+![picture](Pictures/8.gif)  
+where a = 3, b = 3*(h1 + h2), c = (h1^2 + h1*h2 + h2^2) – x  
   
 I wrote the following code to implement the above calculation and get the flag:  
 ```python
