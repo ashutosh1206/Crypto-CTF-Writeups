@@ -15,3 +15,6 @@ Writeups of the following challenges from CTFs:
 | 9     | [Swamp CTF](https://ctftime.org/event/590)           | [Locked-Dungeons-2](Swamp-CTF/Locked-Dugeons-2/)        | 498    | CBC-Bit Flipping Attack |                     |
 | 10    | [Midnight Sun CTF Quals](https://ctftime.org/event/595)| [Hm4c](Midnight-CTF-Quals/hm4c/)                      | 50     | Bit by Bit decryption   |                     |
 | 11    | [Meepwn CTF Quals](https://ctftime.org/event/625)    | [Bazik](Meepwn-CTF-Quals/bazik/)                        | 100    | Coppersmith's Stereotyped |                   |
+| 12    | [noxCTF](https://ctftime.org/event/671)              | [WTF](noxCTF/WTF/)                                      | 742    | Wiener's Attack         |                     |
+| 13    | [noxCTF](https://ctftime.org/event/671)              | [Trinity](noxCTF/Trinity/)                              | 794    | Hastad's Broadcast Attack |                   |
+| 14    | [noxCTF](https://ctftime.org/event/671)              | [Decryptor](noxCTF/Decryptor/)                          | 447    | Chosen Ciphertext Attack |                    |
