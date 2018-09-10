@@ -18,3 +18,4 @@ Writeups of the following challenges from CTFs:
 | 12    | [noxCTF](https://ctftime.org/event/671)              | [WTF](noxCTF/WTF/)                                      | 742    | Wiener's Attack         |                     |
 | 13    | [noxCTF](https://ctftime.org/event/671)              | [Trinity](noxCTF/Trinity/)                              | 794    | Hastad's Broadcast Attack |                   |
 | 14    | [noxCTF](https://ctftime.org/event/671)              | [Decryptor](noxCTF/Decryptor/)                          | 447    | Chosen Ciphertext Attack |                    |
+| 15    | [HackIT CTF](https://ctftime.org/event/672)          | [Into The Darkness](HackIT-CTF/Into-the-Darkness/)      | 862    | CBC Bit Flipping Attack |                     |
