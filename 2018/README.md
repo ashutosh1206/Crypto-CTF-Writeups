@@ -1,5 +1,5 @@
 # 2018 Crypto Writeups
-  
+
 Writeups of the following challenges from CTFs:  
 
 | S.No. | CTF name                                             | Challenge-Name                                          | Points | Vulnerability/Concept   | Level of Difficulty |
@@ -20,3 +20,4 @@ Writeups of the following challenges from CTFs:
 | 14    | [noxCTF](https://ctftime.org/event/671)              | [Trinity](noxCTF/Trinity/)                              | 794    | Hastad's Broadcast Attack |                   |
 | 15    | [noxCTF](https://ctftime.org/event/671)              | [Decryptor](noxCTF/Decryptor/)                          | 447    | Chosen Ciphertext Attack |                    |
 | 16    | [HackIT CTF](https://ctftime.org/event/672)          | [Into The Darkness](HackIT-CTF/Into-the-Darkness/)      | 862    | CBC Bit Flipping Attack |                     |
+| 17   | [HITCON CTF](https://ctftime.org/event/669) | [Lost-Key](HITCON-CTF/Lost-Key/) | 257 | LSByte Oracle Attack |   |
