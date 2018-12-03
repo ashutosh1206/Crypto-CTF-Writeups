@@ -21,3 +21,4 @@ Writeups of the following challenges from CTFs:
 | 15    | [noxCTF](https://ctftime.org/event/671)              | [Decryptor](noxCTF/Decryptor/)                          | 447    | Chosen Ciphertext Attack |                    |
 | 16    | [HackIT CTF](https://ctftime.org/event/672)          | [Into The Darkness](HackIT-CTF/Into-the-Darkness/)      | 862    | CBC Bit Flipping Attack |                     |
 | 17   | [HITCON CTF](https://ctftime.org/event/669) | [Lost-Key](HITCON-CTF/Lost-Key/) | 257 | LSByte Oracle Attack |   |
+| 18   | [CSAW CTF Finals](https://ctftime.org/event/696) | [Disastrous Security](DisastrousSecurity/) | 400 | Breaking MTRNG to get `k` and forge DSA |        |
